@@ -1,0 +1,51 @@
+/*
+nav.topmenu ul {  
+  text-align: center;
+  padding: 0;
+  margin-left: 2px;
+}
+nav.topmenu ul li a {
+  background: url(../Images/top-menu-gradient.png) repeat-x 0 0;
+  padding: 10px 21px;
+  color: #fff;
+}
+nav.topmenu ul li.last a {
+  padding: 10px 23px;
+}
+*/
+/* TopMenu
+-----------------------------------------------------------------------------*/
+
+nav.topmenu {   
+  padding-top: 0px;
+  height: 50px;
+  font-size: 15px;
+  font-family: 'Ubuntu-Medium';
+}
+nav.topmenu a {
+  text-decoration: none;
+}
+nav.topmenu ul {  
+  background: url(../Images/top-menu-gradient.png) repeat-x 0 0;
+  width: 1000px;  
+  text-align: center;
+  padding: 10px 0 9px 0;
+}
+nav.topmenu ul li {
+  display: inline-block;
+  margin: 0 -2px;
+  padding: 0;
+}
+nav.topmenu ul li a {
+ /* background: url(../Images/top-menu-gradient.png) repeat-x 0 0;*/
+  padding: 10px 21px;
+  color: #fff;
+}
+nav.topmenu ul li.last a {
+  padding: 10px 23px;
+}
+
+nav.topmenu ul li a:hover,
+nav.topmenu ul li.active a  {
+  background: url(../Images/top-menu-gradient-hover.png) repeat-x 0 0;
+}

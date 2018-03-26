@@ -1,0 +1,278 @@
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('Calibri.eot?#iefix') format('embedded-opentype'),  url('Calibri.woff') format('woff'), url('Calibri.ttf')  format('truetype'), url('Calibri.svg#Calibri') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: #b8b8b8;
+}
+a:focus {
+    outline: none;
+}
+a {
+    outline: none;
+}
+
+a {
+  color: #10357c;
+}
+a:hover {
+  color: #2eadf2;
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+}
+p.bodytext {
+  text-indent: 15px;
+  margin-bottom: 10px;
+}
+p.align-center {
+  text-align: center;
+}
+i {
+  font-style: italic;
+  text-indent: 0 !important;
+  color: #10357c;
+  font-size: 13px;
+}
+p.bodytext > i {
+  text-indent: 0 !important;
+}
+b {
+  font-weight: bold;
+  color: #10357c;
+}
+
+h1 {
+/*  font-family: 'Ubuntu-Bold';*/
+  font-family: Calibri;
+  font-weight: bold;
+  color: #10357c;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: none;
+  padding: 5px 0 10px 0;
+}
+.news-header h1 {
+/*  font-family: 'Ubuntu-Bold';*/
+  font-family: Calibri;
+  color: #10357c;
+  line-height: 40px;
+  padding: 20px 0;
+  text-transform: none;
+  text-align: center;
+}
+
+h2 {
+  /*font-family: 'Ubuntu-Medium';*/
+ font-family: Calibri;
+  color: #10357c;
+  font-size: 30px;
+  font-weight: bold;  
+  line-height: 30px;
+  text-transform: none;
+  padding: 5px 0 10px 0;
+}
+h3 {
+/*  font-family: 'Ubuntu-Bold';*/
+  font-family: Calibri;
+  color: #10357c;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: none;
+  padding: 5px 0 10px 0;
+}
+/*
+main.content h3 {
+  font-family: 'Ubuntu';
+  color: #10357c;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+*/
+.blue-line h3 {
+  color: #fff !important;
+  padding: 5px 0 0 10px !important;
+  text-transform: none !important;
+}
+.contacts {
+  color: #10357c;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+/* ul ol li */
+.content ul li {
+  list-style: none;
+  padding: 1px 0 1px 20px;
+  background: url(../Images/rhombus.png) no-repeat 0 5px;
+}
+.content ul {
+  padding: 0px 5px 10px 0px;
+}
+.content .jcarousel ul li,
+.content  ul.browsebox li {
+  list-style: none;
+  padding: 0;
+  background: none !important;
+}
+.content .jcarousel ul{
+  padding: 0;
+}
+.content ol {
+  list-style: none; 
+  counter-reset: point;
+}
+.content ol li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+.content ol li:before {
+  content: counter(point)". ";
+  counter-increment: point 1; 
+  font-size: 18px; 
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 25px;
+  padding: 3px 0;
+  color: #10357c;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*
+.content ol { 
+  counter-reset: list1; 
+  padding: 10px;
+} 
+.content ol li {
+  margin-bottom: 5px;
+}
+.content ol li:before {
+  counter-increment: list1;
+  content: counter(list1) ". ";
+}
+.content ol ol { 
+  counter-reset: list2; 
+  padding: 10px; 
+}
+.content ol ol li:before {
+  padding: 5px 15px 0px 15px;
+  counter-increment: list2; 
+  content: counter(list1) "." counter(list2) ". "; 
+}
+*/
+
+.img-border .csc-textpic-image  {
+  border: 5px solid #CECECE;
+}
+.img-border .csc-textpic-image:hover  {
+  border: 5px solid #2EACF1;
+}
+
+.img-border-1px {
+  margin-bottom: 10px;
+}
+.img-border-1px .csc-textpic-image  {
+  border: 3px solid #CECECE;
+}
+.img-border-1px .csc-textpic-image:hover  {
+  border: 3px solid #2EACF1;
+}
+
+
+
+/* Files */
+
+.file-list {
+  font-size: 12px;
+  padding-right: 20px;
+}
+.file-list p {
+  text-indent: 0;
+}
+.csc-uploads-fileName {
+  position: relative;
+  top: -27px;
+  left: 27px;
+  display: block;
+  text-align: left;
+}
+.csc-uploads-fileSize {
+  position: relative;
+  top: -51px;
+  left: 33px;
+  display: block;
+}
+p.file {
+  margin-bottom: -5px;
+  height: 47px;
+}
+p.file img {
+  background: transparent !important;
+}
+.csc-uploads-fileSize {
+  display: none;
+}
+
+#c34 p,
+#c35 p {
+  text-indent: 0;
+}
+
+/* Table
+-----------------------------------------------------------------------------*/
+
+table.contenttable { 
+  border-collapse: collapse; 
+  margin: 10px 0px 10px 0px; 
+  width:100%; 
+  border: 1px solid #39568f;
+}
+table.contenttable tr th {
+  
+  color: #10357c;
+  font-family: 'Ubuntu-Bold';
+  text-align:left;   
+  padding: 15px 10px;
+  border: 1px solid #39568f;
+  /*border-bottom: 1px solid #1A4162;*/
+ 
+background: #f4f4f4; /* Old browsers */
+background: -moz-linear-gradient(top,  #f4f4f4 0%, #dddddd 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f4f4f4 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f4f4f4 0%,#dddddd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f4f4f4 0%,#dddddd 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f4f4f4 0%,#dddddd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+ 
+}
+table.contenttable tr td { 
+  padding: 15px 10px;
+ }
+table.contenttable td { 
+  border: 1px solid #39568f;
+  background: #f4f4f4;
+}
+/*
+table.contenttable tr td p.bodytext { 
+  font-size: 12px; 
+  text-align:left; 
+}
+*/
+table.contenttable tr { 
+}
+td.td-0 {
+  font-family: 'Ubuntu-Bold';
+}

@@ -1,0 +1,53 @@
+{namespace n=Tx_News_ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/List.html
+-->
+
+<f:section name="content">
+<f:if condition="{settings.templateLayout} == 1">
+  <div class="blue-line">
+    <h4>Новости</h4>
+    <span><a href="news/">Все новости</a></span>
+  </div>
+      
+      <div class="last-news">
+        <f:if condition="{settings.hidePagination}">
+          <f:then>
+            <f:for each="{news}" as="newsItem" iteration="iterator">
+              <f:render partial="List/Last" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+            </f:for>
+          </f:then>
+          <f:else>
+            <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+              <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+                <f:render partial="List/Last" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+              </f:for>
+            </n:widget.paginate>
+          </f:else>
+        </f:if>
+      </div>
+      <div class="clear"></div>
+</f:if>
+
+<f:if condition="{settings.templateLayout} == 2">      
+      <div class="last-news">
+        <f:if condition="{settings.hidePagination}">
+          <f:then>
+            <f:for each="{news}" as="newsItem" iteration="iterator">
+              <f:render partial="List/List" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+            </f:for>
+          </f:then>
+          <f:else>
+            <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+              <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+                <f:render partial="List/List" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+              </f:for>
+            </n:widget.paginate>
+          </f:else>
+        </f:if>
+      </div>
+      <div class="clear"></div>
+</f:if>
+</f:section>

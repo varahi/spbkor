@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <header class="page-header">
+    <f:cObject typoscriptObjectPath="lib.logo" />
+    <f:cObject typoscriptObjectPath="lib.gerb" />
+    <div class="top-block">
+      <f:cObject typoscriptObjectPath="lib.loginLinks" />
+      <f:cObject typoscriptObjectPath="lib.search" />
+      <f:cObject typoscriptObjectPath="lib.phone" />
+    </div>
+    <f:cObject typoscriptObjectPath="lib.slogan" />
+    <f:render partial="SpecialElements" />
+  </header><!-- .header-->
+  
+
+  <div class="middle">
+  <f:cObject typoscriptObjectPath="lib.topMenu" />
+    <div class="container">
+      <main class="content content-alt" id="content">
+        <f:cObject typoscriptObjectPath="lib.breadcrumb" />
+        {content -> f:format.raw()} 
+        <f:cObject typoscriptObjectPath="lib.sportMenu" />          
+      </main><!-- .content -->
+    </div><!-- .container-->
+        
+    <aside class="right-sidebar">
+      <f:cObject typoscriptObjectPath="lib.rightmenu" />  
+      <f:cObject typoscriptObjectPath="lib.banners" />
+      <f:cObject typoscriptObjectPath="lib.vkGroup" />
+    </aside><!-- .right-sidebar -->    
+    
+  </div><!-- .middle--> 
+  <f:cObject typoscriptObjectPath="lib.footerBlock" />
+  <f:render partial="Footer" />
+</div><!-- .wrapper -->

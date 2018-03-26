@@ -1,0 +1,162 @@
+.special-elements {
+  display: block; 
+}
+#textsizer-classnames {
+  width: 145px;
+  position: relative;
+  left: 25px;
+  top: 20px;
+}
+#textsizer-classnames p {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  width: 145px;
+  text-align: center;
+}
+.special-link {
+  margin: 41px 25px 0 0;
+  width: 200px;
+  text-align: right;
+  font-size: 20px !important;
+  float: right;
+}
+
+#lineheight-classnames p {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  width: 220px;
+  text-align: center;  
+  margin-left: -40px;
+}
+#lineheight-classnames {
+  position: absolute;
+  width: 220px;
+  margin: -8px 0 0 245px;
+}
+
+#color-classnames {
+	position: absolute;
+	margin: -8px 0 0 445px;
+}
+#color-classnames p {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+	width: 140px;
+	text-align: center;
+}
+
+#media-classnames {
+  position: absolute;
+  top: 110px;
+  margin: 53px 0 0 630px;
+}
+
+/* Special elements
+-----------------------------------------------------------------------------*/
+#textsizer {
+    margin-bottom: 6px;
+}
+#textsizer p {
+	display: inline;
+}
+ul.textresizer {
+	list-style: none;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+ul.textresizer li {
+	/*display: inline;
+  margin: 0px;
+  margin-right: 5px;
+  padding: 0px;*/
+  float: left;
+  margin-right: 8px;
+}
+ul.textresizer a {
+	border: solid 2px #000;
+  /*padding: 2px 3px;*/
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;  
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+}    
+/* 
+ul.textresizer a:hover {
+	background: #e5e5e5;
+  border: solid 1px #cccccc;       
+}
+*/
+ul.textresizer .small-text {
+	font-size: 12px;
+}    
+ul.textresizer .medium-text {
+	font-size: 24px;
+}
+ul.textresizer .medium-text span {
+  position: relative;
+  top: 6px;
+} 
+ul.textresizer .large-text {
+	font-size: 30px;
+}
+ul.textresizer .large-text span {
+  position: relative;
+  top: 3px;
+}   
+ul.textresizer .larger-text {
+  font-size: 36px;
+} 
+ul.textresizer a.textresizer-active {
+	border: solid 4px #4b4b4b;
+  background: #d3d1d1;
+  color: #000000;   
+  position: relative;
+  top: -2px;             
+}
+
+
+ul.textresizer .line-1 a {
+  background: url('../Images/line-medium.png') no-repeat scroll center 50% transparent;
+}
+ul.textresizer .line-2 a {
+  background: url('../Images/line-large.png') no-repeat scroll center 50% transparent;
+}
+ul.textresizer .line-3 a {
+  background: url('../Images/line-larger.png') no-repeat scroll center 50% transparent;
+}
+
+ul.lineresizer .line-1 a.textresizer-active {
+  background: #d3d1d1 url('../Images/line-medium.png') no-repeat 50% 50%;
+}
+ul.lineresizer .line-2 a.textresizer-active {
+  background: #d3d1d1 url('../Images/line-large.png') no-repeat 50% 50%;
+}
+ul.lineresizer .line-3 a.textresizer-active {
+  background: #d3d1d1 url('../Images/line-larger.png') no-repeat 50% 50%;
+}
+
+ul.color .color-1 a {
+	background: #fff;	
+}
+ul.color .color-2 a {
+	background: #000;
+}
+ul.color .color-3 a {
+	background: #B4CFFC;
+}
+
+ul.color .color-1 a.textresizer-active {
+	background: #fff;
+}
+ul.color .color-2 a.textresizer-active {
+	background: #000;
+}
+ul.color .color-3 a.textresizer-active {
+	background: #B4CFFC;
+}

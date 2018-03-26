@@ -1,0 +1,7 @@
+nav.topmenu ul li a {
+  padding: 11px 23px;
+  color: #fff;
+}
+nav.topmenu ul li.last a {
+  padding: 11px 14px;
+}
